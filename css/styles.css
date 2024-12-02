@@ -1,0 +1,113 @@
+#main-container {
+    margin: auto;
+    width: 80%;
+    height: 1000px;
+    border-radius: 1%;
+    background-color: white;
+}
+
+#user-container, #task-container {
+    background-color: #f7f7f7;
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-container, #task-container, h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#user-container, #task-container, input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#user-Informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+}
+
+#user-Informations h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#user-Informations img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+ul#list-container {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+#list-container li {
+    background-color: #e7e7e7;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#list-container input[type="checkbox"] {
+    margin-right: -350px;
+}
+
+button.edit-btn:hover {
+    color: #4CAF50;
+    background-color: white;
+}
+
+button.delete-btn:hover {
+    color: #F44336;
+    background-color: red;
+}
+
+#addUser, #addTask {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#addUser:hover, #addTask:hover {
+    background-color: #45a049;
+}
