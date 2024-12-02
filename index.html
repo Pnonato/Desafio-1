@@ -12,7 +12,7 @@
         <h1>Lista de Afazeres por Usuários</h1>
 
         <div id="user-container">
-
+            <h2>Adicionar Novo Usuário</h2>
             <input type="text" placeholder="Nome do Usuário">
             <input type="text" placeholder="URL da imagem">
             <button id="addUser">Adicionar Usuário</button>
@@ -21,19 +21,39 @@
 
 
         <div id="task-container">
-            <img src="" alt="">
-            <h2></h2>
-            <button></button>
-            <button></button>
 
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <div id="user-Informations">
+                <img src="https://e7.pngegg.com/pngimages/340/946/png-clipart-avatar-user-computer-icons-software-developer-avatar-child-face-thumbnail.png" alt="">
+                <h2>Pedro Marrara Barros Nonato</h2>
+                <button class="edit-btn">✏️</button>
+                <button class="delete-btn">🗑️</button>
+                
+            </div>
+          
+            <ul id="list-container">
+                <li>
+                    <input type="checkbox" id="item1">
+                    Item 1
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </li>
+                <li>
+                    <input type="checkbox" id="item2">
+                    Item 2
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </li>
+                <li>
+                    <input type="checkbox" id="item3">
+                    Item 3
+                    <button class="edit-btn">✏️</button>
+                    <button class="delete-btn">🗑️</button>
+                </li>
             </ul>
+            
 
             <input type="text" placeholder="Novo Afazer">
-            <button > + Adicioanar Tarefa</button>
+            <button id="addTask"> + Adicioanar Tarefa</button>
                 
         </div>
 
