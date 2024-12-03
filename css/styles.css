@@ -30,51 +30,55 @@
     font-size: 16px;
 }
 
+/* Alinhamento dos elementos do usuário */
 #user-Informations {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 20px auto;
+    justify-content: space-between;  /* Deixa a imagem, nome e botões distribuídos entre si */
+    align-items: center;  /* Alinha os itens verticalmente no centro */
+    width: 100%;
     padding: 10px;
     background-color: #f7f7f7;
     border-radius: 8px;
 }
 
 #user-Informations h2 {
-    flex-grow: 1;
-    text-align: center;
     margin: 0;
     font-size: 18px;
     color: #333;
+    padding-right: 20px; /* Espaço entre o nome e os botões */
+    flex-grow: 1; /* Faz com que o nome ocupe o máximo de espaço disponível */
+    text-align: left; /* Alinha o nome à esquerda */
 }
 
- #user-Informations img {
-    width: 80px;
-    height: 80px;
+#user-Informations img {
+    width: 80px; /* Ajuste o tamanho da largura */
+    height: 80px; /* Ajuste o tamanho da altura */
     border-radius: 50%;
     margin-right: 15px;
-} 
+}
 
-button {
+/* Estilo dos botões */
+#user-Informations button {
     background-color: transparent;
     color: #333;
     border: none;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 10px;  /* Espaço entre os botões */
 }
 
-.edit-userName-btn:hover{
+/* Estilo para os botões de editar e excluir */
+.edit-userName-btn:hover {
     color: #4CAF50;
     background-color: white;                                                    
 }
 
-.delete-user-btn:hover{
+.delete-user-btn:hover {
     color: #F44336;
     background-color: red;
 }
 
+/* Estilos gerais */
 ul#list-container {
     list-style-type: none;
     padding: 0;
@@ -120,4 +124,227 @@ button.delete-btn:hover {
 
 #addUser:hover, #addTask:hover {
     background-color: #45a049;
+}   
+
+.user-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.user-info-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info-container .user-name {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.user-info-container button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-info-container button:hover {
+    color: #4CAF50;
+}
+
+#users-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.user-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.user-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-container h2 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button:hover {
+    color: #4CAF50;
+    background-color: white;
+}
+
+#users-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.user-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.user-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-container h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button:hover {
+    color: #4CAF50;
+    background-color: white;
+}
+
+/* Estilos para o contêiner de tarefas */
+.task-container {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.task-container input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.task-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-container button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a lista de tarefas */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.task-list li {
+    background-color: #e7e7e7;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-list button:hover {
+    color: #4CAF50;
+    background-color: white;
+}
+
+/* Estilo para os botões de editar e excluir */
+.edit-userName-btn, .delete-user-btn, .edit-btn, .delete-btn {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover para os botões de editar e excluir */
+.edit-userName-btn:hover, .delete-user-btn:hover, .edit-btn:hover, .delete-btn:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+
+/* Outros estilos que você possa querer */
+.edit-userName-btn, .delete-user-btn {
+    margin-left: 10px;
+}
+
+/* Adicionando um efeito de transformação no hover */
+.edit-userName-btn:hover, .delete-user-btn:hover {
+    transform: scale(1.1);
+}
+.task-checkbox{
+    margin-right: 10px;  /* Adiciona 10px de espaço entre o checkbox e o texto */
+    text-decoration: line-through;
+}
+
+.task-checkbox:checked + .task-text {
+    text-decoration: line-through;
 }
