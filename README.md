@@ -26,4 +26,6 @@ Este é um projeto simples de lista de afazeres onde os usuários podem ser adic
    ```bash
    git clone <URL-do-repositorio>
 
+   - **Abra o arquivo index.html no navegador de sua escolha:** 
+
 
