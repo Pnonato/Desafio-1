@@ -33,8 +33,8 @@
 /* Alinhamento dos elementos do usuário */
 #user-Informations {
     display: flex;
-    justify-content: space-between;  /* Deixa a imagem, nome e botões distribuídos entre si */
-    align-items: center;  /* Alinha os itens verticalmente no centro */
+    justify-content: space-between;  
+    align-items: center;  
     width: 100%;
     padding: 10px;
     background-color: #f7f7f7;
@@ -45,14 +45,14 @@
     margin: 0;
     font-size: 18px;
     color: #333;
-    padding-right: 20px; /* Espaço entre o nome e os botões */
-    flex-grow: 1; /* Faz com que o nome ocupe o máximo de espaço disponível */
-    text-align: left; /* Alinha o nome à esquerda */
+    padding-right: 20px; 
+    flex-grow: 1; 
+    text-align: left; 
 }
 
 #user-Informations img {
-    width: 80px; /* Ajuste o tamanho da largura */
-    height: 80px; /* Ajuste o tamanho da altura */
+    width: 80px; 
+    height: 80px; 
     border-radius: 50%;
     margin-right: 15px;
 }
@@ -64,7 +64,7 @@
     border: none;
     cursor: pointer;
     font-size: 16px;
-    margin-left: 10px;  /* Espaço entre os botões */
+    margin-left: 10px;  
 }
 
 /* Estilo para os botões de editar e excluir */
@@ -341,7 +341,7 @@ button:hover {
     transform: scale(1.1);
 }
 .task-checkbox{
-    margin-right: 10px;  /* Adiciona 10px de espaço entre o checkbox e o texto */
+    margin-right: 10px; 
     text-decoration: line-through;
 }
 
